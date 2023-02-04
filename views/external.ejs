@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Login
+    </title>
+    <!-- <script src="../../accessories1.js"></script> -->
+<style>
+    
+    body {
+  background: rgba(0,0,0,0.7);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 40%;
+  top: 40%;
+  font-family: arial black;
+  font-size: 13px;
+}
+.box{
+    background:rgba(255, 255, 255, 0.45);
+    border: 10px solid transparent;
+    border-radius: 20px;
+    width:fit-content;
+    margin:auto;
+    margin-top:15rem;
+    padding:2rem;  
+}
+.box1 {
+  border-radius: 7px;
+  height:2rem;
+  background-color: rgba(255, 228, 196,0.7);}
+  .button {
+    margin-left:3rem;
+    padding:10px;
+    border-radius:5px;
+    background-color:  rgba(255, 228, 196,0.7);}
+</style>
+</head>
+<body>
+    <div class="box">
+    <form action="/login" method="POST"> 
+      <label for>Username</label><br><br>
+      <input type="text" placeholder="Username" name="username" class="box1"><br>
+        <label for="Email">Email</label><br><br>
+        <input type="email"value=""placeholder="Email"required class="box1"  id="email" name="email"><br><br>
+        <label for="password">Password</label><br><br>
+        <input type="Password" placeholder="Password" class="box1" name="password"><br><br>
+        <button type="submit" class="button"  id="button"onclick="done()">Login</button>
+    
+      </div>
+    
+        </form>
+    </div>
+</body>
+</html>

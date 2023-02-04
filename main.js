@@ -62,6 +62,13 @@ main.post("/login",(req,res)=>{
 main.get("/profile",(req,res)=>{
     res.render("profile")
 })
+main.post("/profile",(req,res)=>{
+
+    pool.query(`UPDATE user SET Username = '${req.body.newusername}', Email = '${req.body.newemail}' WHERE Email=?`,credentials[0].Email,(err , data) => {
+        if (err) throw err
+        res.send('Successfully changed the username and email!')
+    })
+})
 main.post
 
 
